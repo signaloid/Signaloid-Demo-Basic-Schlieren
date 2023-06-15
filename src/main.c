@@ -35,7 +35,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <uncertain.h>
+#include <uxhw.h>
 #include <unistd.h>
 
 void	usage(FILE *);
@@ -161,8 +161,8 @@ main(int argc, char *  argv[])
 	/*
 	 *	Load samples into distributional double variables.
 	 */
-	A = libUncertainDoubleDistFromSamples(samplesA, numberOfSamplesA);
-	B = libUncertainDoubleDistFromSamples(samplesB, numberOfSamplesB);
+	A = UxHwDoubleDistFromSamples(samplesA, numberOfSamplesA);
+	B = UxHwDoubleDistFromSamples(samplesB, numberOfSamplesB);
 
 	printf("A = %lf\n", A);
 
